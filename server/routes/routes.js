@@ -69,6 +69,27 @@ router.put('/update/:id', async (req, res) => {
     }
 })
 
+//Update todo by ID
+router.put('/updateTodo/:id/:todo', async (req, res) => {
+    try {
+        const id = req.params.id;
+        const todo = req.params.todo;
+        const updatedData = req.body.checked;
+        console.log(updatedData);
+
+        const result = await Model.findOneAndUpdate(
+            { _id: id, "todo._id":  todo}, 
+            { $set: {
+                'todo.$.checked': updatedData
+            }})
+
+        res.send(result)
+    }
+    catch (error) {
+        res.status(500).json({ message: error.message })
+    }
+})
+
 //Delete by ID Method
 router.delete('/delete/:id', async (req, res) => {
     try {

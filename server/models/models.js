@@ -9,7 +9,8 @@ const dataSchema = new mongoose.Schema({
         required: true,
         type: String
     },
-    sleep: [{asleepTime: String, wakeupTime: String}]
+    sleep: [{asleepTime: String, wakeupTime: String}],
+    todo: [{text: String, checked: Boolean}]
 })
 
 module.exports = mongoose.model('Data', dataSchema)
