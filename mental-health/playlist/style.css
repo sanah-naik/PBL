@@ -1,0 +1,17 @@
+body {
+  background: #5161ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.test { 
+  margin: 30px 0px;
+border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,.3);
+}
+.test2 {
+  margin-bottom: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,.3);
+}
