@@ -88,7 +88,7 @@ class onFocus {
                     console.log(jqXHR);
                     alert('fail' + status.code);
                 }
-             });
+            });
         })
     }
 }
