@@ -123,6 +123,21 @@ body .container .form-set .btn:focus .login:focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
 
+.signup {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 30px;
+  background-color: transparent;
+  font-size: 16px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.signup:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
 body .container .login-with .title {
   padding-bottom: 5px;
   padding-left: 15px;
